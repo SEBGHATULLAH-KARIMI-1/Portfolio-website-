@@ -1,0 +1,340 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+
+}
+body{
+    background-color: black;
+
+}
+.container{
+    width: 100%;
+
+}
+.Navbar{
+ color: white;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 20px;
+   font-size: 20px;
+   margin-left: 70px;
+}
+.Navbar li{
+    display: inline;
+    padding: 20px;
+   margin: 25px;
+   
+}
+.Navbar a{
+    text-decoration: none;
+color: white;
+
+   
+}
+.Navbar li :hover{
+   color: rgb(197, 70, 70);
+   border-bottom:2px solid  rgb(197, 70, 70);  ;
+
+}
+.Navbar p{
+    color: rgb(197, 70, 70);
+    font-size: 30px;
+}
+.maincontent{
+    color: white;
+    margin-top: 40px;
+    padding: 40px;
+}
+.maincontent img {
+width:320px;
+height: 450px;
+margin-left: 10px;
+position: absolute;
+left: 0px;
+border-radius: 40px;
+
+
+}
+.myname{
+   font-size: 40px;
+  
+}
+.myname-name{
+      color: rgb(197, 70, 70);
+}
+.feild{
+ color: rgb(197, 70, 70);
+   font-size: 30px;
+}
+.maincontent p{
+    width: 700px;
+    position: absolute;
+    right: 0px;
+    padding: 100px;
+
+}
+.text-content{
+ position: relative;
+ 
+}
+.text-content ul{
+ width: 400px;
+
+position: absolute;
+right: 0px;
+font-size: 18px;
+margin-right: 400px;
+margin-top: 250px;
+
+ 
+}
+.text-content li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.social a{
+    padding: 6px;
+   border: 2px solid  rgb(197, 70, 70);
+   border-radius: 50%;
+   text-align: center;
+    text-decoration: none;
+    color: rgb(197, 70, 70); 
+    
+}
+
+.social li:hover{
+   
+ box-shadow: 20px 20px 20px rgba(55, 71, 65, 0.4);
+ transform: scale(1.2);
+transition: all 2.5s;
+}
+
+
+.text-content .HireMe{
+     all: unset;
+    text-align: center;
+    border: 2px solid   rgb(197, 70, 70);
+width: 160px;
+position: absolute;
+right: 0px;
+font-size: 18px;
+margin-right: 590px;
+margin-top: 320px;
+padding: 10px;
+border-radius: 30px;
+transition: all 2.5s;
+}
+.HireMe:hover{
+ box-shadow: 20px 20px 20px rgba(55, 71, 65, 0.4);
+ transform: scale(1.2);
+
+}
+#about-me{
+   margin-top: 400px; 
+   color: white;
+   padding: 40px;
+}
+.header{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+.text-about{
+   display: flex;
+   align-items: center;
+   margin-top: 100px;
+  
+    
+
+}
+
+.myimage{
+   width:320px;
+height: 420px;
+margin-left: 20px;
+border-radius: 40px;
+
+}
+#about-me .about-mainText{
+      width: 700px;
+    position: absolute;
+    right: 0px;
+    padding: 100px;
+    margin-top: 620px;
+}
+
+ .box{
+    width: 700px;
+    position: absolute;
+    right: 90px;
+    margin-top: 200px;
+    display: flex;
+   gap: 20px;
+
+}
+
+
+.box1,.box2{
+    margin-bottom: 30PX;
+    padding: 20PX;
+    color: white;
+ border: 2px solid rgb(48, 39, 39);
+ border-radius: 20px;
+ text-align: center;
+ background-color: rgb(90, 90, 85);
+}
+
+
+#project .header{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.cards{
+    display: flex;
+    gap: 10px;
+  justify-content: center;
+    width: 90%;
+    margin-left: 80px;
+}
+.cards .card{
+   margin-bottom: 30px;
+    width: 30%;
+    height: 500px;
+    border: 1px solid rgb(173, 170, 170);
+ border-radius: 20px;
+    
+}
+.cards .card img{
+ margin-left: 20px;
+ margin-top: 20px;
+ border-radius: 30px;
+   width: 90%;
+   height: 300px;
+}
+.cards .card h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+}
+.cards .card button{
+    all: unset;
+    text-align: center;
+    background-color: rgb(235, 231, 226);
+   width: 100px;
+   height: 40px;
+    border-radius: 30px;
+display: inline-block;
+margin-left: 50px;
+margin-top: 30px;
+}
+.cards .card a{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+}
+#Expreince{
+    color: white;
+}
+.box-expreince{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 70px;
+}
+.Expreince-info h3{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.Expreince-info{
+    width: 320px;
+    border: 1px solid  rgb(165, 160, 160);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+.Expreince-info li{
+    display: flex;
+    padding-top: 10px;
+    gap: 30px;
+   
+
+}
+
+#contact{
+    color: white;
+}
+.form-contact{
+    color: black;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(133, 131, 129);
+    text-align: center;
+ border-radius: 12px;
+ padding-bottom: 10px;
+ margin-bottom: 50px;
+  box-shadow:  0px 15px 20px rgba(97, 110, 105, 0.4);
+}
+
+.form-contact h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.form-contact label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+
+}
+.form-contact input{
+    width: 94%;
+    padding: 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(117, 113, 113);
+}
+.send{
+   padding:14px 40px;
+ 
+   border-radius: 13px;
+   background-color: #fff;
+   font-weight: 500;
+   color: black;
+   border: none;
+   border-radius: 45px;
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+   letter-spacing: 2.5px;
+transition: all 0.3s ease 0s;
+
+}
+.send:hover{
+    background-color:#27c284;
+    box-shadow:  0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: #fff;
+    color: black;
+}
+
+
+
+
+
+   
+
+
+
+
+
