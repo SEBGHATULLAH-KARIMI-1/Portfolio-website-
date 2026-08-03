@@ -468,6 +468,9 @@ body {
 .box-skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+width:100%;
+  grid-template-areas: "frontend" "Backend";
   gap: 40px;
   margin-top: 30px;
 }
@@ -641,6 +644,7 @@ footer p {
     font-size: 16px;
   }
 
+
   .myname {
     font-size: 40px;
   }
@@ -687,6 +691,12 @@ footer p {
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
+  }
+    .box-skills{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "frontend" "Backend";
   }
   .main-about{
     grid-template-columns: 1fr;
@@ -770,7 +780,12 @@ footer p {
   .Navbar p {
     font-size: 24px;
   }
-
+  .box-skills{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "frontend" "Backend";
+  }
   .Navbar a {
     font-size: 12px;
     padding: 6px 10px;
