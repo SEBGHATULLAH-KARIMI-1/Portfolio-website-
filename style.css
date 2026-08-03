@@ -696,8 +696,7 @@ footer p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "frontend" 
-    "Backend";
+ 
   }
   .main-about{
     grid-template-columns: 1fr;
@@ -785,8 +784,7 @@ footer p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "frontend" 
-    "Backend";
+
   }
   .Navbar a {
     font-size: 12px;
