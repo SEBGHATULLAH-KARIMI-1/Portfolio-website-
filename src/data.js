@@ -56,9 +56,8 @@ export const about = {
 
 /*
  * Projects.
- * - `github` / `demo`: leave as '' until the project is hosted. The card then
+ * - `github` / `demo`: put the project's links here. Leave as '' and the card
  *   shows a disabled "Coming soon" button instead of a broken link.
- * - The 4 sample projects live in /samples (see samples/README.md).
  */
 export const projects = [
   {
