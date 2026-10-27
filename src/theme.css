@@ -1,0 +1,219 @@
+/* ==========================================================================
+   Theme "Calm" — dark, simple, uncluttered.
+   Loaded AFTER index.css. One accent colour, flat cards, no glow or tilt.
+   Remove the import in main.jsx to go back to the previous look.
+   ========================================================================== */
+:root {
+  --bg: #0b0b0c;
+  --surface: #121214;
+  --border: rgba(255, 255, 255, 0.08);
+  --accent: #d9534f;
+  --accent-2: #ef7b76;
+  --muted: #a1a1aa;
+  --dim: #71717a;
+  --radius: 16px;
+  --grad: var(--accent); /* buttons/bars become a single flat colour */
+}
+
+body { background: var(--bg); }
+
+/* ---------- Remove the busy effects ---------- */
+.cursor-glow,
+.hero__glow { display: none; }
+
+.progress { height: 2px; background: var(--accent); }
+.hero__scene { opacity: 0.6; }
+
+.gradient-text {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: var(--accent-2);
+}
+
+/* ---------- Cards: flat, thin border ---------- */
+.card-glass {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  transition: border-color 0.25s, background 0.25s;
+}
+.card-glass:hover {
+  background: #161618;
+  border-color: rgba(217, 83, 79, 0.5);
+  box-shadow: 0 24px 60px rgba(217, 83, 79, 0.12);
+}
+
+/* ---------- Buttons ---------- */
+.btn { border-radius: 12px; font-weight: 600; }
+.btn--primary { background: var(--accent); color: #fff; }
+.btn--primary::after { display: none; }
+.btn--primary:hover:not(:disabled) { background: var(--accent-2); transform: translateY(-2px); box-shadow: none; }
+.btn--ghost { background: transparent; border-color: rgba(255, 255, 255, 0.16); color: #e4e4e7; }
+.btn--ghost:hover { background: rgba(255, 255, 255, 0.07); border-color: rgba(255, 255, 255, 0.3); color: #fff; box-shadow: none; transform: none; }
+.btn--disabled small { color: var(--dim); }
+
+/* ---------- Navbar: simple bar ---------- */
+.nav { border-radius: 14px; background: rgba(11, 11, 12, 0.8); border-color: var(--border); }
+.nav--scrolled { border-color: var(--border); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); }
+.nav__link { border-radius: 8px; }
+.nav__pill { border-radius: 8px; background: rgba(255, 255, 255, 0.07); border: 0; }
+.nav__brand { font-size: 1.5rem; letter-spacing: 1px; }
+.nav__mobile { border-color: var(--border); background: #111113; }
+.nav__mobile a:hover,
+.nav__mobile a.is-active { background: rgba(255, 255, 255, 0.07); }
+
+/* ---------- Hero ---------- */
+.hero__hello { color: var(--accent-2); letter-spacing: 0.2em; font-size: 0.8rem; }
+.hero__name { font-size: clamp(2.4rem, 5.5vw, 4.2rem); letter-spacing: -0.02em; line-height: 1.08; }
+.hero__role { color: var(--accent-2); font-weight: 500; letter-spacing: 0; }
+.caret { background: var(--accent-2); }
+.hero__intro { color: var(--muted); line-height: 1.75; }
+
+.social a { border: 1px solid rgba(255, 255, 255, 0.14); color: #d4d4d8; width: 44px; height: 44px; font-size: 1.1rem; }
+.social a:hover { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(-3px); box-shadow: none; }
+
+/* Portrait: simple rounded frame, no spinning border */
+.photo-card,
+.photo-card__frame { border-radius: 24px; }
+.photo-card__frame { padding: 0; border: 1px solid var(--border); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5); }
+.photo-card__frame::before { display: none; }
+.photo-card__frame img { border-radius: 23px; }
+
+/* ---------- Section headers: small label + title + short bar ---------- */
+.section { padding: 80px 0; }
+.section-header { margin-bottom: 44px; }
+.eyebrow { color: var(--accent-2); font-size: 0.75rem; letter-spacing: 0.25em; }
+.section-header h2 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); letter-spacing: -0.01em; }
+.section-header h2::before { display: none; }
+.section-header h2::after { width: 40px; height: 3px; background: var(--accent); }
+
+/* ---------- About / stats ---------- */
+.icon-badge { width: 46px; height: 46px; border-radius: 12px; background: rgba(217, 83, 79, 0.14); color: var(--accent-2); box-shadow: none; font-size: 1.25rem; }
+.about-card p { line-height: 1.75; }
+.stat__num { color: #fff; font-size: clamp(2rem, 4vw, 2.6rem); }
+
+/* ---------- Projects ---------- */
+.project-card__media { border-radius: 12px; }
+.project-card:hover .project-card__media img { transform: scale(1.04); }
+.project-card__index { background: rgba(11, 11, 12, 0.8); border: 1px solid var(--border); color: #e4e4e7; }
+.tags li { background: rgba(255, 255, 255, 0.06); border-color: transparent; color: #c4c4cc; font-weight: 500; }
+
+/* ---------- Skills ---------- */
+.skills-card h3 { font-size: 1.3rem; text-align: left; margin-bottom: 26px; }
+.skills-card h3::after { left: 0; transform: none; height: 2px; background: var(--accent); }
+.skill-list li { border-radius: 10px; }
+.skill-list li:hover { background: rgba(255, 255, 255, 0.05); }
+.skill-list svg { color: var(--accent-2); }
+
+/* ---------- Contact ---------- */
+.form h3 { font-size: 1.5rem; }
+.field input,
+.field textarea { border-radius: 10px; background: #0e0e10; }
+.field input:focus,
+.field textarea:focus { border-color: var(--accent-2); box-shadow: 0 0 0 3px rgba(217, 83, 79, 0.18); background: #0e0e10; }
+
+.footer { margin-top: 20px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .skills-card h3 { text-align: center; }
+  .skills-card h3::after { left: 50%; transform: translateX(-50%); }
+}
+@media (max-width: 640px) {
+  .section { padding: 60px 0; }
+}
+
+/* ==========================================================================
+   Engineer touches: code window, 3D grid floor, monospace labels
+   ========================================================================== */
+:root { --mono: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, Menlo, monospace; }
+
+/* Code window floating in front of the portrait */
+.code-win {
+  position: absolute;
+  left: -22%;
+  bottom: -7%;
+  width: 285px;
+  border-radius: 12px;
+  background: rgba(14, 14, 16, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(217, 83, 79, 0.12);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  font-family: var(--mono);
+  overflow: hidden;
+  animation: bob 5s ease-in-out infinite;
+}
+.code-win__bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+}
+.code-win__bar i { width: 9px; height: 9px; border-radius: 50%; background: #3f3f46; }
+.code-win__bar i:nth-child(1) { background: #ff5f57; }
+.code-win__bar i:nth-child(2) { background: #febc2e; }
+.code-win__bar i:nth-child(3) { background: #28c840; }
+.code-win__bar span { margin-left: 8px; color: var(--dim); font-size: 0.72rem; }
+.code-win__body {
+  min-height: 8.6em;
+  padding: 12px 14px 14px;
+  font-family: inherit;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  white-space: pre;
+  color: #d4d4d8;
+}
+.t-k { color: #ef7b76; }
+.t-v { color: #7dd3fc; }
+.t-s { color: #a3e635; }
+.t-b { color: #fbbf24; }
+.t-p { color: #a1a1aa; }
+
+/* Perspective grid floor under the hero (pure CSS 3D) */
+.hero::after {
+  content: '';
+  position: absolute;
+  left: -20%;
+  right: -20%;
+  bottom: 0;
+  height: 48%;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(217, 83, 79, 0.28) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217, 83, 79, 0.28) 1px, transparent 1px);
+  background-size: 56px 56px;
+  transform: perspective(520px) rotateX(62deg);
+  transform-origin: 50% 100%;
+  -webkit-mask-image: linear-gradient(to top, #000 10%, transparent 85%);
+  mask-image: linear-gradient(to top, #000 10%, transparent 85%);
+  animation: gridmove 3.2s linear infinite;
+}
+@keyframes gridmove { to { background-position: 0 56px, 56px 0; } }
+
+/* Monospace labels and brand */
+.eyebrow { font-family: var(--mono); letter-spacing: 0.08em; text-transform: none; font-size: 0.85rem; }
+.eyebrow::before { content: '// ' counter(sec, decimal-leading-zero) ' · '; color: var(--dim); }
+main { counter-reset: sec; }
+.section-header { counter-increment: sec; }
+.nav__brand::before { content: '<'; color: var(--accent-2); font-family: var(--mono); font-weight: 400; }
+.nav__brand::after { content: ' />'; color: var(--accent-2); font-family: var(--mono); font-weight: 400; font-size: 0.7em; }
+.tags li { font-family: var(--mono); font-size: 0.72rem; }
+
+/* Project cards: image lifts out of the card in 3D */
+.project-card__media { box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45); }
+
+@media (max-width: 1024px) {
+  .code-win { left: -8%; }
+}
+@media (max-width: 640px) {
+  .section { padding: 60px 0; }
+  .hero__scene { opacity: 0.35; } left: -4%; width: 235px; bottom: -10%; }
+  .code-win__body { font-size: 0.7rem; }
+}

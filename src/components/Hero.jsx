@@ -2,6 +2,7 @@ import { lazy, Suspense, useRef } from 'react'
 import { motion, useInView, useReducedMotion } from 'framer-motion'
 import TiltCard from './TiltCard.jsx'
 import Typewriter from './Typewriter.jsx'
+import CodeWindow from './CodeWindow.jsx'
 import ErrorBoundary from './ErrorBoundary.jsx'
 import { profile, socials } from '../data.js'
 
@@ -79,9 +80,7 @@ export default function Hero() {
               <div className="photo-card__frame">
                 <img src={profile.photo} alt={`Portrait of ${profile.name}`} />
               </div>
-              <span className="chip chip--a">React</span>
-              <span className="chip chip--b">TypeScript</span>
-              <span className="chip chip--c">Node.js</span>
+              <CodeWindow />
             </TiltCard>
           </motion.div>
         </motion.div>

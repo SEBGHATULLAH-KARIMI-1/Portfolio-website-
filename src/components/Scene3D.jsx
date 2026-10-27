@@ -105,7 +105,7 @@ export default function Scene3D({ active = true }) {
       eventSource={document.getElementById('root')}
       eventPrefix="client"
     >
-      <fog attach="fog" args={['#0a0a0a', 7, 17]} />
+      <fog attach="fog" args={['#0b0b0c', 7, 17]} />
       <ambientLight intensity={0.5} />
       <pointLight position={[5, 5, 5]} intensity={60} color="#ff8a8a" />
       <pointLight position={[-6, -3, 2]} intensity={25} color="#ffffff" />
