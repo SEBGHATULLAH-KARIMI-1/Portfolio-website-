@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <h1>Task <span>Manager</span></h1>
+        <p class="sub">Stay focused. Ship things.</p>
+      </div>
+      <div class="ring" role="img" aria-label="Completion progress">
+        <svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle class="ring__bg" cx="18" cy="18" r="15.9" pathLength="100" />
+          <circle class="ring__fg" id="ringFg" cx="18" cy="18" r="15.9" pathLength="100" />
+        </svg>
+        <span id="ringText">0%</span>
+      </div>
+    </header>
+
+    <form id="form" autocomplete="off">
+      <input id="input" type="text" placeholder="What needs to be done?" maxlength="80" required aria-label="New task" />
+      <select id="priority" aria-label="Priority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+
+    <nav class="filters" aria-label="Filter tasks">
+      <button data-filter="all" aria-pressed="true">All</button>
+      <button data-filter="active" aria-pressed="false">Active</button>
+      <button data-filter="done" aria-pressed="false">Done</button>
+    </nav>
+
+    <ul id="list" aria-live="polite"></ul>
+
+    <footer>
+      <span id="count"></span>
+      <button id="clear" type="button">Clear completed</button>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

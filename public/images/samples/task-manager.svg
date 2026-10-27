@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#c74646"/><stop offset="1" stop-color="#e67373"/></linearGradient>
+    <radialGradient id="glow" cx="80%" cy="0%" r="70%"><stop offset="0" stop-color="#c74646" stop-opacity=".4"/><stop offset="1" stop-color="#0a0a0a" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#0a0a0a"/>
+  <rect width="800" height="500" fill="url(#glow)"/>
+  <rect x="180" y="34" width="440" height="432" rx="26" fill="#141414" stroke="#fff" stroke-opacity=".1"/>
+
+  <text x="212" y="92" font-size="30" font-weight="700" fill="#fff">Task <tspan fill="#e67373">Manager</tspan></text>
+  <text x="212" y="116" font-size="13" fill="#a3a3a3">Stay focused. Ship things.</text>
+
+  <circle cx="568" cy="84" r="27" fill="none" stroke="#fff" stroke-opacity=".1" stroke-width="5"/>
+  <circle cx="568" cy="84" r="27" fill="none" stroke="#c74646" stroke-width="5" stroke-linecap="round" stroke-dasharray="113 170" transform="rotate(-90 568 84)"/>
+  <text x="568" y="89" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">66%</text>
+
+  <rect x="212" y="146" width="268" height="40" rx="12" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".1"/>
+  <text x="228" y="171" font-size="13" fill="#777">What needs to be done?</text>
+  <rect x="488" y="146" width="48" height="40" rx="12" fill="#fff" fill-opacity=".06"/>
+  <rect x="544" y="146" width="48" height="40" rx="12" fill="url(#g)"/>
+  <text x="568" y="171" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Add</text>
+
+  <rect x="212" y="204" width="46" height="24" rx="12" fill="#c74646" fill-opacity=".2" stroke="#c74646" stroke-opacity=".6"/>
+  <text x="235" y="221" font-size="12" fill="#fff" text-anchor="middle">All</text>
+  <text x="285" y="221" font-size="12" fill="#a3a3a3">Active</text>
+  <text x="338" y="221" font-size="12" fill="#a3a3a3">Done</text>
+
+  <g>
+    <rect x="212" y="246" width="380" height="48" rx="14" fill="#fff" fill-opacity=".03" stroke="#fff" stroke-opacity=".1"/>
+    <circle cx="238" cy="270" r="12" fill="#c74646"/>
+    <path d="M232 270l4 4 8-8" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="262" y="275" font-size="14" fill="#a3a3a3" text-decoration="line-through">Design the portfolio hero</text>
+    <rect x="522" y="260" width="52" height="20" rx="10" fill="#e74c3c" fill-opacity=".2"/>
+    <text x="548" y="274" font-size="10" fill="#ff8a80" text-anchor="middle">HIGH</text>
+  </g>
+  <g>
+    <rect x="212" y="304" width="380" height="48" rx="14" fill="#fff" fill-opacity=".03" stroke="#fff" stroke-opacity=".1"/>
+    <circle cx="238" cy="328" r="12" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="2"/>
+    <text x="262" y="333" font-size="14" fill="#fff">Add 3D tilt cards</text>
+    <rect x="514" y="318" width="60" height="20" rx="10" fill="#f1c40f" fill-opacity=".15"/>
+    <text x="544" y="332" font-size="10" fill="#ffd666" text-anchor="middle">MEDIUM</text>
+  </g>
+  <g>
+    <rect x="212" y="362" width="380" height="48" rx="14" fill="#fff" fill-opacity=".03" stroke="#fff" stroke-opacity=".1"/>
+    <circle cx="238" cy="386" r="12" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="2"/>
+    <text x="262" y="391" font-size="14" fill="#fff">Deploy to GitHub Pages</text>
+    <rect x="526" y="376" width="48" height="20" rx="10" fill="#2ecc71" fill-opacity=".15"/>
+    <text x="550" y="390" font-size="10" fill="#7ee2a8" text-anchor="middle">LOW</text>
+  </g>
+  <text x="212" y="440" font-size="12" fill="#a3a3a3">2 tasks left</text>
+  <text x="592" y="440" font-size="12" fill="#e67373" text-anchor="end">Clear completed</text>
+</svg>
